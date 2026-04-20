@@ -1,4 +1,4 @@
-// Last updated: 4/20/2026, 11:06:44 AM
+// Last updated: 4/20/2026, 11:07:08 AM
 1class Solution {
 2public:
 3    int majorityElement(vector<int>& nums) {
@@ -16,13 +16,7 @@
 15            if (freq>n/2){
 16                return ans;
 17            }
-18
-19
-20
-21
-22
-23
-24         }return ans;
-25    }  
-26    
-27};
+18        }return ans;
+19    }  
+20    
+21};
