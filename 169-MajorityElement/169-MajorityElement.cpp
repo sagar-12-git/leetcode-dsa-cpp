@@ -1,22 +1,18 @@
-// Last updated: 4/20/2026, 11:07:21 AM
+// Last updated: 4/20/2026, 11:14:32 AM
 1class Solution {
 2public:
 3    int majorityElement(vector<int>& nums) {
-4        int n=nums.size();
-5        sort(nums.begin(),nums.end());
-6        int freq=1;
-7        int ans=nums[0];
-8        for(int i=1;i<n;i++){
-9            if(nums[i]==nums[i-1]){
-10                freq++;
-11
-12            }else{
-13                freq=1;ans=nums[i];
-14            }
-15            if (freq>n/2){
-16                return ans;
-17            }
-18        }return ans;
-19    }  
-20    
-21};
+4      int freq=0,ans=0;
+5      for(int i =0;i<nums.size();i++){
+6        if(freq==0){
+7            ans=nums[i];
+8        }
+9        if(ans==nums[i]){
+10            freq++;
+11        }else{
+12            freq--;
+13        }
+14      }return ans;
+15    }  
+16    
+17};
