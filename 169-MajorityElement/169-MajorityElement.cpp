@@ -1,4 +1,4 @@
-// Last updated: 4/20/2026, 11:05:05 AM
+// Last updated: 4/20/2026, 11:06:44 AM
 1class Solution {
 2public:
 3    int majorityElement(vector<int>& nums) {
